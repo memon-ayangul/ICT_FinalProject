@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browse Events - UniPulse</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <a href="index.html" id="logo">UniPulse</a>
+        <nav id="nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="browse.html">Browse Events</a></li>
+                <li><a href="post.html">Post Your Event</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="browse">
+            <h2>Browse Events</h2>
+            <label for="search">Search by name:</label>
+            <input type="text" id="search" placeholder="Type an event name">
+            <label for="filter">Category:</label>
+            <select id="filter">
+                <option value="all">All</option>
+                <option value="society">Society</option>
+                <option value="competition">Competition</option>
+                <option value="seminar">Seminar</option>
+                <option value="social">Social</option>
+            </select>
+            <p id="no-results" hidden>No events found.</p>
+            <ul id="events"></ul>
+        </section>
+        <section id="details" hidden>
+            <h2>Event Details</h2>
+            <h3 id="details-title"></h3>
+            <p>Category: <span id="details-category"></span></p>
+            <p>Date: <span id="details-date"></span></p>
+            <p>Location: <span id="details-location"></span></p>
+            <p id="details-desc"></p>
+            <button type="button" id="details-close">Back to Events</button>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2026 UniPulse. Unofficial student project, not connected to FAST-NUCES.</p>
+        <p>By Ayan Gul Memon, Muhammad Mohsin Abbas and Muhammad Arsalan Zafar.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post Your Event - UniPulse</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <a href="index.html" id="logo">UniPulse</a>
+        <nav id="nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="browse.html">Browse Events</a></li>
+                <li><a href="post.html">Post Your Event</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="post">
+            <h2>Are you hosting an event?</h2>
+            <p>Students, societies and outside organizations can post their upcoming event here.</p>
+            <form id="post-form" novalidate>
+                <p class="field">
+                    <label for="organizer-type">Who is hosting?</label>
+                    <select id="organizer-type">
+                        <option value="">Choose one</option>
+                        <option value="student">Student</option>
+                        <option value="society">Society</option>
+                        <option value="outside">Outside organization (company, bank, etc.)</option>
+                    </select>
+                    <small class="error" id="organizer-type-error"></small>
+                </p>
+                <p class="field">
+                    <label for="org-name">Society/organization name</label>
+                    <input type="text" id="org-name">
+                    <small class="error" id="org-name-error"></small>
+                </p>
+                <p class="field">
+                    <label for="name">Contact Name</label>
+                    <input type="text" id="name">
+                    <small class="error" id="name-error"></small>
+                </p>
+                <p class="field">
+                    <label for="email">Contact email</label>
+                    <input type="email" id="email">
+                    <small class="error" id="email-error"></small>
+                </p>
+                <p class="field">
+                    <label for="title">Event title</label>
+                    <input type="text" id="title">
+                    <small class="error" id="title-error"></small>
+                </p>
+                <p class="field">
+                    <label for="category">Category</label>
+                    <select id="category">
+                        <option value="">Choose a category</option>
+                        <option value="society">Society</option>
+                        <option value="competition">Competition</option>
+                        <option value="seminar">Seminar</option>
+                        <option value="social">Social</option>
+                    </select>
+                    <small class="error" id="category-error"></small>
+                </p>
+                <p class="field">
+                    <label for="date">Date</label>
+                    <input type="date" id="date">
+                    <small class="error" id="date-error"></small>
+                </p>
+                <p class="field">
+                    <label for="time">Time</label>
+                    <input type="time" id="time">
+                    <small class="error" id="time-error"></small>
+                </p>
+                <p class="field">
+                    <label for="location">Location</label>
+                    <input type="text" id="location">
+                    <small class="error" id="location-error"></small>
+                </p>
+                <p class="field">
+                    <label for="description">Description</label>
+                    <textarea id="description" rows="4"></textarea>
+                    <small class="error" id="description-error"></small>
+                </p>
+                <button type="submit">Post Event</button>
+            </form>
+            <p id="success" hidden>Thank you! Your event has been received.</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2026 UniPulse. Unofficial student project, not connected to FAST-NUCES.</p>
+        <p>By Ayan Gul Memon, Muhammad Mohsin Abbas and Muhammad Arsalan Zafar.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

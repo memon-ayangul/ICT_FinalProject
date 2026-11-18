@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UniPulse - FAST Karachi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <a href="index.html" id="logo">UniPulse</a>
+        <nav id="nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="browse.html">Browse Events</a></li>
+                <li><a href="post.html">Post Your Event</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home">
+            <h1>Never miss an event again</h1>
+            <p>UniPulse puts society orientations, competitions, seminars and social events from FAST Karachi in one place.</p>
+        </section>
+        <section id="about">
+            <h2>What is UniPulse?</h2>
+            <p>UniPulse is an unofficial events board made by students for students at FAST-NUCES Karachi.</p>
+            <p>Events usually get shared in social media posts, class groups and society announcements, so it is easy to miss them. UniPulse collects them on one website so you can see what is coming up.</p>
+            <h3>What you can do here</h3>
+            <ul>
+                <li>See upcoming events from societies, departments and outside organizations</li>
+                <li>Search events by name and filter them by category</li>
+                <li>Open any event to read its date, time, location and description</li>
+                <li>Post your own event from the Post Your Event page</li>
+            </ul>
+        </section>
+        <section id="upcoming-events">
+            <h2>Happening This Week</h2>
+            <ul id="upcoming"></ul>
+        </section>
+        <section id="details" hidden>
+            <h2>Event Details</h2>
+            <h3 id="details-title"></h3>
+            <p>Category: <span id="details-category"></span></p>
+            <p>Date: <span id="details-date"></span></p>
+            <p>Location: <span id="details-location"></span></p>
+            <p id="details-desc"></p>
+            <button type="button" id="details-close">Back to Events</button>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2026 UniPulse. Unofficial student project, not connected to FAST-NUCES.</p>
+        <p>By Ayan Gul Memon, Muhammad Mohsin Abbas and Muhammad Arsalan Zafar.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
